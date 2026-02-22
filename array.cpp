@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,x;
+    cin>>n>>x;
+    int a[5];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    for(int i=x;i<n-1;i++){
+        a[i]=a[i+1];
+    }
+    for(int i=0;i<n;i++){
+        cout<<a[i];
+    }
+}
